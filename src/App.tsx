@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
+import { IBANChecker } from './IbanChecker';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Hello</p>
+        <IBANChecker />
       </header>
     </div>
   );
