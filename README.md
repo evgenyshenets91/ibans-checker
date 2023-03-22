@@ -1,18 +1,19 @@
-# Application for checking for IBANs from Montenegro
+# Application for checking IBANs from Montenegro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### According to European Committee for Banking Standards was done initial logic for checking IBANs ([document](https://www.ecbs.org/Download/EBS204_V3.2.pdf))
+
+# Test IBANs for checking:
+- ME25505000012345678951 Valid 
+- MD25505000012345678951 Invalid
+
+## How to run the project locally:
 
 In the project directory, you can run:
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+It runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-# IBANs for checking:
-- ME25505000012345678951 Valid 
-- MD25505000012345678951 Invalid
-
-# Demo
+# Demo:
 
 ![](https://github.com/evgenyshenets91/ibans-checker/blob/main/docs/demo.gif)
