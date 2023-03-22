@@ -21,9 +21,7 @@ export const IBANChecker: FC = () => {
       <button onClick={handleCheckIBAN}>Check</button>
       <ul>
         {checkHistory.map(({ iban, result }, index) => (
-          <li key={index}>
-            {iban}: {result ? 'Valid' : 'Invalid'}
-          </li>
+          <li key={index}>{`${iban}: ${result ? 'Valid' : 'Invalid'}`}</li>
         ))}
       </ul>
     </div>
