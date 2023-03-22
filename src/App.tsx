@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { IBANChecker } from './IbanChecker';
+import { IBANChecker } from './IBANChecker';
 
 function App() {
   return (

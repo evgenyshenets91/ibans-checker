@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent } from 'react';
+import React, { useState, ChangeEvent, FC } from 'react';
 
 type IBAN = string;
 type History = { iban: IBAN; result: boolean };
@@ -44,7 +44,7 @@ const validateIBAN = (iban: IBAN): boolean => {
   return calculateRemainder(converted) === 1;
 };
 
-export function IBANChecker() {
+export const IBANChecker: FC = () => {
   const [iban, setIBAN] = useState('');
   const [checkHistory, setCheckHistory] = useState<History[]>([]);
 
@@ -71,4 +71,4 @@ export function IBANChecker() {
       </ul>
     </div>
   );
-}
+};
